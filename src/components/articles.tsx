@@ -22,6 +22,12 @@ const Articles = () => {
         }
     `);
 
+    if (data.allMarkdownRemark.edges.length === 0) {
+        return (
+            <p>There are no articles on this blog.</p>
+        )
+    }
+
     return (
         <ul>
             {
