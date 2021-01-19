@@ -2,6 +2,7 @@
 slug: "/articles/some-article"
 date: "2021-01-18"
 title: "Some article"
+published: false
 ---
 
 
