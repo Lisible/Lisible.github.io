@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default function Template({
     data,
@@ -7,16 +9,19 @@ export default function Template({
     const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
     return (
-        <div className="article-container">
-            <article>
+    	<Layout>
+	  <SEO title="{frontmatter.title}" />
+          <div className="article-container">
+             <article>
                 <h1>{frontmatter.title}</h1>
                 <h2>{frontmatter.date}</h2>
                 <div
                     className="article-content"
                     dangerouslySetInnerHTML={{ __html: html }}
                 />
-            </article>
-        </div>
+             </article>
+          </div>
+	</Layout>
     )
 }
 
