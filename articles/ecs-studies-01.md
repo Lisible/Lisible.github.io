@@ -1,5 +1,5 @@
 ---
-slug: "/articles/some-article"
+slug: "/articles/ecs-studies-01"
 date: "2021-02-04"
 title: "ECS Studies - 01 - What's an Ecs ?"
 published: true
