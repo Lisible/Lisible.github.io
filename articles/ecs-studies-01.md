@@ -58,7 +58,7 @@ I won't explore the definition of these concepts more in depth in this article s
 Another challenging aspect is, as in any data structure and particularly
 the ones used in a parallel concepts, ensuring its soundness. This is
 especially true in the context of using a programming language like
-Rust which will either scream at you if you try to do is unsound or
+Rust which will either scream at you if what you try to do is unsound or
 will go brrrr if unsound unsafe code is used to get around it.
 
 ## Conclusion
