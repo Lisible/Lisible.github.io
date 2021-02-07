@@ -6,12 +6,12 @@ html {
   overflow-y: scroll;
   background-color: #282828;
 }
+
 body {
   margin: 0;
   color: #ebdbb2;
   font-family: georgia, serif;
 }
-
 
 h1 {
   margin-bottom: 1.45rem;
@@ -20,6 +20,6 @@ h1 {
   font-weight: bold;
 }
 
-a:visited {
+a, a:visited {
   color: inherit;
 }
