@@ -15,6 +15,15 @@ module.exports = {
         path: `${__dirname}/articles`
       }
     },
-    `gatsby-transformer-remark`
+    {
+	resolve: `gatsby-transformer-remark`,
+	options: {
+	    plugins: [
+		  {
+		      resolve: 'gatsby-remark-prismjs'
+		  }
+	      ]
+	  }
+      }
   ],
 }
