@@ -33,8 +33,8 @@ const Articles = () => {
             {
                 data.allMarkdownRemark.edges.map(({ node }) => (
                     <li key={node.frontmatter.slug}>
-                        <a href={node.frontmatter.slug}>{node.frontmatter.title}</a> - {node.frontmatter.date}
-                    </li>
+                        {node.frontmatter.date} - <a href={node.frontmatter.slug}>{node.frontmatter.title}</a>
+	            </li>
                 ))
             }
         </ul>

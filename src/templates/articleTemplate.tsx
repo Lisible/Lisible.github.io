@@ -14,7 +14,7 @@ export default function Template({
           <div className="article-container">
              <article>
                 <h1>{frontmatter.title}</h1>
-                <h2>{frontmatter.date}</h2>
+                <time datetime={frontmatter.date}>{frontmatter.date}</time>
                 <div
                     className="article-content"
                     dangerouslySetInnerHTML={{ __html: html }}
